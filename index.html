@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Portfolio</title>
+  <meta name="description"
+    content="Frontend Developer Digital Marketing Fundamentals building clean, responsive web experiences with React, JavaScript, and modern CSS. Based in Tamil Nadu, India." />
+  <meta name="keywords"
+    content="Karuppasamy, Frontend Developer, React, JavaScript, HTML, CSS, Bootstrap, Web Development, Tamil Nadu" />
+  <meta name="author" content="Karuppasamy" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Karuppasamy — Frontend Developer" />
+  <meta property="og:description"
+    content="Frontend Developer building clean, responsive web experiences with React, JavaScript, and modern CSS." />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Karuppasamy — Frontend Developer" />
+  <meta name="twitter:description"
+    content="Frontend Developer building clean, responsive web experiences with React and modern CSS." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem('theme');
+        if (stored === 'light') {
+          document.documentElement.classList.add('light');
+        } else if (stored === 'dark') {
+          document.documentElement.classList.remove('light');
+        } else if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+          document.documentElement.classList.add('light');
+          localStorage.setItem('theme', 'light');
+        } else {
+          localStorage.setItem('theme', 'dark');
+        }
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
