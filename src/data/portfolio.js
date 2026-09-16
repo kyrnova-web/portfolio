@@ -5,7 +5,7 @@
 
 export const personal = {
   name: 'Karuppasamy',
-  title: 'Frontend Developer',
+  title: 'Frontend Developer & Digital Marketer',
   label: 'Frontend Developer',
   sublabel: 'Digital Marketing Fundamentals',
   tagline: 'I build clean, responsive web experiences that are easy to use.',
@@ -14,7 +14,7 @@ export const personal = {
   email: 'Karthicdev220@gmail.com',
   linkedin: 'https://www.linkedin.com/in/karuppasamy-k-459661294/',
   github: 'https://github.com/kyrnova-web',
-  location: 'Tamil Nadu, India',
+  location: 'Valparai, Tamil Nadu',
 };
 
 export const highlights = [
