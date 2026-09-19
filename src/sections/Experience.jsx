@@ -38,19 +38,19 @@ export default function Experience() {
                 className="group relative flex flex-col sm:flex-row gap-2 sm:gap-16 p-5 sm:p-6 rounded-[16px] border border-transparent bg-transparent hover:bg-[var(--surface-raised)] hover:border-[var(--border)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)] transition-all duration-300 ease-out [.light_&]:border-transparent hover:[.light_&]:border-slate-200/90 hover:[.light_&]:bg-white hover:[.light_&]:shadow-[0_8px_24px_rgba(139,92,246,0.06)]"
               >
                 {/* Duration */}
-                <div className="sm:w-36 pt-1 flex-shrink-0">
-                  <p className="text-label text-[var(--accent)] [.light_&]:text-xs [.light_&]:font-mono [.light_&]:font-bold [.light_&]:tracking-wider [.light_&]:text-slate-400 group-hover:[.light_&]:text-purple-600 transition-colors uppercase">
+                <div className="sm:w-36 pt-1 flex-shrink-0 z-10 relative">
+                  <p className="text-label text-[var(--accent)] transition-colors duration-300 [.light_&]:text-xs [.light_&]:font-mono [.light_&]:font-bold [.light_&]:tracking-wider [.light_&]:text-slate-400 group-hover:[.light_&]:text-purple-600 uppercase">
                     {exp.duration}
                   </p>
                 </div>
 
                 {/* Timeline Node */}
-                <div className="hidden sm:flex absolute left-[12.5rem] -ml-[3.5px] top-[0.65rem] w-2 h-2 rounded-full bg-[var(--accent)] shadow-[0_0_8px_var(--accent)] text-[var(--accent)] [.light_&]:bg-slate-300 [.light_&]:shadow-none [.light_&]:ring-4 [.light_&]:ring-white transition-all duration-300 group-hover:[.light_&]:bg-purple-600 group-hover:[.light_&]:ring-purple-100 group-hover:[.light_&]:scale-125" />
+                <div className="hidden sm:flex absolute left-[12.5rem] -ml-[3.5px] top-[1rem] w-2 h-2 rounded-full bg-[var(--accent)] shadow-[0_0_8px_var(--accent)] ring-0 ring-cyan-400/0 transition-all duration-300 ease-out z-10 group-hover:bg-cyan-400 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.9)] group-hover:scale-125 group-hover:ring-4 group-hover:ring-cyan-400/20 [.light_&]:bg-slate-300 [.light_&]:shadow-none [.light_&]:ring-4 [.light_&]:ring-white group-hover:[.light_&]:bg-purple-600 group-hover:[.light_&]:ring-purple-100 group-hover:[.light_&]:scale-125" />
 
                 {/* Content */}
-                <div className="flex-1 pb-2">
+                <div className="flex-1 pb-2 z-10 relative">
                   <div className="mb-4">
-                    <h3 className="heading-md trainer-link transition-colors duration-300 [.light_&]:text-xl [.light_&]:font-bold">
+                    <h3 className="heading-md trainer-link transition-colors duration-300 [.light_&]:text-xl [.light_&]:font-bold group-hover:[.light_&]:text-slate-900">
                       {exp.role}
                     </h3>
                     <p className="text-small text-[var(--text-muted)] mt-1 [.light_&]:text-[14.5px] [.light_&]:font-medium [.light_&]:text-slate-500">
@@ -60,8 +60,8 @@ export default function Experience() {
                   <ul className="space-y-3 sm:space-y-3.5">
                     {exp.responsibilities.map((req, rIdx) => (
                       <li key={rIdx} className="text-body flex items-start gap-3 [.light_&]:text-slate-600 [.light_&]:text-[15px] [.light_&]:leading-relaxed">
-                        <span className="text-[var(--text-faint)] mt-[0.45rem] text-[0.55rem] [.light_&]:text-slate-400 group-hover:[.light_&]:text-purple-500 transition-colors">●</span>
-                        <span className="flex-1 opacity-90 [.light_&]:opacity-100">{req}</span>
+                        <span className="text-[var(--text-faint)] mt-[0.45rem] text-[0.55rem] transition-colors duration-300 [.light_&]:text-slate-400 group-hover:[.light_&]:text-purple-500">●</span>
+                        <span className="flex-1 opacity-90 transition-opacity duration-300 group-hover:opacity-100 [.light_&]:opacity-100">{req}</span>
                       </li>
                     ))}
                   </ul>
@@ -89,26 +89,26 @@ export default function Experience() {
               className="group relative flex flex-col sm:flex-row gap-2 sm:gap-16 opacity-80 hover:opacity-100 p-5 sm:p-6 rounded-[16px] border border-transparent bg-transparent hover:bg-[var(--surface-raised)] hover:border-[var(--border)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.25)] transition-all duration-300 ease-out [.light_&]:opacity-100 [.light_&]:border-transparent hover:[.light_&]:border-slate-200/90 hover:[.light_&]:bg-white hover:[.light_&]:shadow-[0_8px_24px_rgba(139,92,246,0.06)]"
             >
               {/* Duration */}
-              <div className="sm:w-36 pt-1 flex-shrink-0">
-                <p className="text-label text-[var(--text-muted)] [.light_&]:text-xs [.light_&]:font-mono [.light_&]:font-bold [.light_&]:tracking-wider [.light_&]:text-slate-400 group-hover:[.light_&]:text-purple-600 transition-colors uppercase">
+              <div className="sm:w-36 pt-1 flex-shrink-0 z-10 relative">
+                <p className="text-label text-[var(--text-muted)] transition-colors duration-300 [.light_&]:text-xs [.light_&]:font-mono [.light_&]:font-bold [.light_&]:tracking-wider [.light_&]:text-slate-400 group-hover:[.light_&]:text-purple-600 uppercase">
                   {internship.duration}
                 </p>
               </div>
 
               {/* Timeline Node */}
-              <div className="hidden sm:flex absolute left-[12.5rem] -ml-[3.5px] top-[0.65rem] w-2 h-2 rounded-full bg-[var(--border-hover)] [.light_&]:bg-slate-300 [.light_&]:ring-4 [.light_&]:ring-white transition-all duration-300 group-hover:[.light_&]:bg-purple-600 group-hover:[.light_&]:ring-purple-100 group-hover:[.light_&]:scale-125" />
+              <div className="hidden sm:flex absolute left-[12.5rem] -ml-[3.5px] top-[1.1rem] w-2 h-2 rounded-full bg-[var(--border-hover)] ring-0 ring-cyan-400/0 transition-all duration-300 ease-out z-10 group-hover:bg-cyan-400 group-hover:shadow-[0_0_12px_rgba(34,211,238,0.9)] group-hover:scale-125 group-hover:ring-4 group-hover:ring-cyan-400/20 [.light_&]:bg-slate-300 [.light_&]:ring-4 [.light_&]:ring-white group-hover:[.light_&]:bg-purple-600 group-hover:[.light_&]:ring-purple-100 group-hover:[.light_&]:scale-125" />
 
               {/* Content */}
-              <div className="flex-1 pb-2">
+              <div className="flex-1 pb-2 z-10 relative">
                 <div className="mb-4">
-                  <h3 className="text-[1.0625rem] font-medium text-[var(--text-primary)] [.light_&]:text-xl [.light_&]:font-bold [.light_&]:text-slate-900">
+                  <h3 className="text-[1.0625rem] font-medium text-[var(--text-primary)] transition-colors duration-300 [.light_&]:text-xl [.light_&]:font-bold [.light_&]:text-slate-900 group-hover:[.light_&]:text-slate-900">
                     {internship.role}
                   </h3>
                   <p className="text-small text-[var(--text-muted)] mt-1 [.light_&]:text-[14.5px] [.light_&]:font-medium [.light_&]:text-slate-500">
                     {internship.company} — {internship.location}
                   </p>
                 </div>
-                <p className="text-body mb-5 [.light_&]:text-slate-600 [.light_&]:text-[15px] [.light_&]:leading-relaxed">
+                <p className="text-body mb-5 transition-opacity duration-300 group-hover:opacity-100 opacity-90 [.light_&]:text-slate-600 [.light_&]:text-[15px] [.light_&]:leading-relaxed [.light_&]:opacity-100">
                   {internship.description}
                 </p>
 

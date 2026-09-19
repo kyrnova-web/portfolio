@@ -93,19 +93,40 @@ export const projects = [
   {
     id: 'iot-fire-detection',
     title: 'IoT-Based Fire Detection & Alert System',
-    subtitle: 'Arduino / GPS / GSM',
+    subtitle: 'EMBEDDED SYSTEMS / IoT / ARDUINO / GPS / GSM',
     description:
       'Developed a fire detection and alert system using Arduino to detect fire hazards and trigger an audio alarm. Integrated GPS and GSM modules to identify the fire location and send emergency SMS alerts for real-time notification.',
     highlights: [
       'Real-time fire detection through sensor input',
       'GPS-based location identification',
-      'Emergency SMS alerts using a GSM module',
-      'Audio alarm for immediate on-site notification',
+      'Emergency SMS alerts using GSM',
+      'Audio alarm for immediate notification',
     ],
     technologies: ['Arduino Uno', 'Fire Sensor', 'GPS Module', 'GSM Module', 'Buzzer / Alarm'],
     category: 'Embedded Systems / IoT',
-    githubUrl: null,
-    liveUrl: null,
+    githubUrl: '#',
+    liveUrl: '#',
+  },
+  {
+    id: 'vision-sign-language',
+    title: 'Vision-Based Sign Language Translator',
+    subtitle: 'COMPUTER VISION / AI / PYTHON',
+    description:
+      'A real-time sign language recognition system that uses a webcam, MediaPipe and OpenCV to detect hand gestures, classify signs, and convert recognized gestures into text and speech.',
+    highlights: [
+      'Real-time hand gesture detection',
+      '21-point hand landmark tracking',
+      'Gesture classification',
+      'Text output',
+      'Text-to-speech audio output',
+      'Webcam-based interaction'
+    ],
+    technologies: ['Python', 'OpenCV', 'MediaPipe', 'NumPy', 'Pyttsx3', 'Visual Studio Code'],
+    category: 'Computer Vision / AI',
+    flow: ['Webcam', 'Hand Detection', 'Landmark Tracking', 'Gesture Classification', 'Text', 'Speech'],
+    githubUrl: '#',
+    liveUrl: '#',
+    reportUrl: '#'
   },
 ];
 
